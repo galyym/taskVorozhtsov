@@ -29,6 +29,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <div class="mt-3">
+            <p id="memory" style="display: none;">Memory</p>
+            <p id="time" style="display: none;">Time</p>
+        </div>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -49,8 +54,19 @@
                     "Accept": "application/json"
                 },
             })
-            .then(res => console.log(res.data))
-            .catch(err => console.log(err));
+            .then(res => {
+                console.log(res.data);
+
+                document.getElementById('memory').style.display = "block";
+                document.getElementById('time').style.display = "block";
+                document.getElementById('memory').innerHTML = "Memory: " + res.data.data.memory;
+                document.getElementById('time').innerHTML = "Time: " + res.data.data.time;
+            })
+            .catch(err => {
+                document.getElementById('memory').style.display = "none";
+                document.getElementById('time').style.display = "none";
+                alert("Check the correctness of the entered data");
+            });
         });
     </script>
 </body>

@@ -13,7 +13,11 @@ class TaskService
         return response([
             "status" => true,
             "message" => "Task added successfully",
-            "data" => $task
+            "data" => [
+                "task" => $task,
+                "time" => floor((microtime(true) - LARAVEL_START) * 1000) . " ms",
+                'memory' => memory_get_peak_usage() / 1024 / 1024 ." MB"
+            ]
         ]);
     }
 }

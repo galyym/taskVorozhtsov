@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'task', 'middleware' => ['auth:sanctum']],function(){
     Route::match(['get', 'post'], '/add', [TaskController::class, 'addTask']);
+
 });
