@@ -17,13 +17,16 @@ Realization
 
 Realization
 1. First we start the development server using the command: php artisan serve
-2. We open our page http://127.0.0.1 and fill out the form and click SUBMIT
+2. We click on url http://127.0.0.1:8000 and fill out the form and click SUBMIT
 
 ```3. Скрипт с поддержкой как GET, так и POST, который принимает отдельными параметрами идентификатор записи с БД и код, который нужно выполнить по отношению к JSON-объекту, который после выполнения нужно обновить. Код подразумевает уже выполненный json_decode в переменную $data по отношению к объекту с БД и содержит инструкции по обновлению частей JSON-объекта, например:```
 
 ```$data->list->sublist[0] = 0;```
 
 ```$data->list->sublist[1] = 2;```
+
+Realization
+1. Click on url http://127.0.0.1:8000/json/task and fill out the form. You can see the ID in the json_tasks table. I made it so that when adding records to the tasks table, the same records are duplicated in the json_tasks table.
 
 
 ```4. Скрипт, также как и второй, должен работать исключительно с аутентификацией по токену, полученному в console-части. Аутентификация должна проходить по заголовку в запросе. Обновить объект может исключительно тот же пользователь, что его создал. Для удобства тестирования необходимо сделать форму (подробнее в комментариях).```

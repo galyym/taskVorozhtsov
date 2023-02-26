@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('task');
 });
+Route::get('/json/task', function () {
+    return view('jsontask');
+});
+
