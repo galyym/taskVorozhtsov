@@ -1,5 +1,6 @@
 ## Start 
-```1. we have to create a database in mysql named "task_vorozhtsov", and we need to write this database name to the .env file.```
+
+```1. after composer install, we have to create a database in mysql named "task_vorozhtsov", and we need to write this database name to the .env file.```
 
 ```2. php artisan migrate```
 
@@ -9,8 +10,8 @@ You will have test users:
 
 | Name  | Email             | Password |
 |-------|-------------------|----------|
- | Debug | test@test.test    | test     |
- | ADMIN | admin@admin.admin | admin    |
+| Debug | test@test.test    | test     |
+| ADMIN | admin@admin.admin | admin    |
 
 Inside the project there is also a TaskVorozhtsov.postman_collection.json file containing the postman collection.
 
