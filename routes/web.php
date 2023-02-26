@@ -14,9 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('app');
+});
+Route::get('/task/1', function () {
     return view('task');
 });
-Route::get('/json/task', function () {
+Route::get('/task/2', function () {
     return view('jsontask');
+});
+Route::get('/task/3', function () {
+    return view('task4/task4');
+});
+Route::get('/task4/update/{id}', function ($id) {
+    return view('task4/update')->with('task_id', $id);
 });
 

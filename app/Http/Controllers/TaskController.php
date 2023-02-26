@@ -15,11 +15,11 @@ class TaskController extends Controller
         $this->service = $service;
     }
 
-    public function addTask(TaskRequest $request){
+    public function addTask(TaskRequest $request){ // task2
         return $this->service->addTask($request->validated());
     }
 
-    public function updateTask(JsonTaskRequest $request){
+    public function updateTask(JsonTaskRequest $request){ //task3
         return $this->service->updateTask($request->validated());
     }
 }
