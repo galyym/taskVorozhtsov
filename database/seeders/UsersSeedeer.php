@@ -21,5 +21,10 @@ class UsersSeedeer extends Seeder
             "email" => "test@test.test",
             "password" => Hash::make("test")
         ]);
+        DB::table('users')->insert([
+            "name" => "ADMIN",
+            "email" => "admin@admin.com",
+            "password" => Hash::make("admin")
+        ]);
     }
 }

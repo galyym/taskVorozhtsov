@@ -5,6 +5,15 @@
 
 ```3. php artisan db:seed```
 
+You will have test users: 
+
+| Name  | Email             | Password |
+|-------|-------------------|----------|
+ | Debug | test@test.test    | test     |
+ | ADMIN | admin@admin.admin | admin    |
+
+Inside the project there is also a TaskVorozhtsov.postman_collection.json file containing the postman collection.
+
 ## Task
 
 ``` 1. Скрипт авторизации в console-части, то есть он должен быть доступен через консоль на сервере (командой php artisan command и т.д.). Принимает в параметрах логин и пароль - возвращает токен, действующий 5 минут, который нужно использовать для второго и третьего скриптов. Пользователей сгенерировать через сидер, форму регистрации и т.д. делать не нужно.```
@@ -34,6 +43,13 @@ Realization
 Realization
 1. We click on url http://127.0.0.1:8000 and Task4. Here you will be shown all the tasks. It can also be updated and deleted. Only those users who created this record can delete and update it.
 
+
+## Config
+php version: 8.0.28
+
+laravel version: 9.52.4
+
+apache: Apache/2.4.52 (Ubuntu)
 
 ## Отчет
 Задача  | Оценка   | Затрачено      | Комментарий                                                                                                                                                            |
