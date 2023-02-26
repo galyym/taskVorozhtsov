@@ -60,7 +60,7 @@
                     let status = res.data.message;
                     console.log(status);
                     alert(status);
-                    window.location.href = '/task/3';
+                    window.location.href = '/task/4';
                 })
                 .catch(err => {
                     alert(err.message);

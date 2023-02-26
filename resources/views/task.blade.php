@@ -1,6 +1,8 @@
 @extends('app')
 @section('content')
     <div class="container">
+        <h1>Insert task</h1>
+
         <form id="form">
             <select class="form-select" aria-label="Default select example" id="request_type">
                 <option value="get">GET</option>

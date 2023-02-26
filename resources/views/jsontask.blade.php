@@ -1,6 +1,8 @@
 @extends('app')
 @section('content')
 <div class="container">
+    <h1>Update the task in json format</h1>
+
     <form id="form">
         <select class="form-select" aria-label="Default select example" id="request_type">
             <option value="get">GET</option>
@@ -26,7 +28,7 @@
             <label for="token" class="form-label">Token</label>
             <input type="text" class="form-control" name="token" id="token">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Update</button>
     </form>
 
     <div class="mt-3">

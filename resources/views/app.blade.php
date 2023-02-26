@@ -13,13 +13,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="navbar-brand" href="{{ url('/task/1') }}">Task 1</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="navbar-brand" href="{{ url('/task/2') }}">Task 2</a>
                         </li>
                         <li class="nav-item">
                             <a class="navbar-brand" href="{{ url('/task/3') }}">Task 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="{{ url('/task/4') }}">Task 4</a>
                         </li>
                     </ul>
                 </div>
